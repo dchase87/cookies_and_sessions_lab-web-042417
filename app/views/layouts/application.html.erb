@@ -7,7 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= form_tag products_path %>
+    <%= text_field_tag :product %>
+    <%= submit_tag "add to cart" %>
 <%= yield %>
 
 </body>
